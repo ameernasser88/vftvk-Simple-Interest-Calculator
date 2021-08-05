@@ -1,9 +1,15 @@
 
+    var principal ;
+var years ;
+var rate;
+
 
 function onPageLoad() {
-        var principal = document.getElementById("principal");
-        var years = document.getElementById("years");
-        var rate = document.getElementById("rate");
+
+principal = document.getElementById("principal");
+ years = document.getElementById("years");
+rate = document.getElementById("rate");
+
 
 
     for(i=1; i<=10; i++){
@@ -19,9 +25,7 @@ function onPageLoad() {
 
 function compute()
 {
-    var principal = document.getElementById("principal");
-var years = document.getElementById("years");
-var rate = document.getElementById("rate");
+
 
 if(principal.value < 1){
         alert("amount should be greater than 0")
