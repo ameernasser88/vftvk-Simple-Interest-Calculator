@@ -4,17 +4,21 @@
 
 
 body {
-background-color:white;
+background-color:black;
 }
 
 h1{color:grey;}
 
 .container{
 
+	background-color: white;
+	border-radius: 30px;
+	padding: 50px;
+
 
  position: absolute;
   left: 50%;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }

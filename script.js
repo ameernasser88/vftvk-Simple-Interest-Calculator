@@ -1,5 +1,20 @@
 
 
+function onPageLoad() {
+        var principal = document.getElementById("principal");
+        var years = document.getElementById("years");
+        var rate = document.getElementById("rate");
+
+
+    for(i=1; i<=10; i++){
+        let element = document.createElement("option")
+        element.innerText = i
+        element.setAttribute("value", i)
+        years.appendChild(element)
+    }
+}
+
+
 
 
 function compute()
@@ -7,6 +22,12 @@ function compute()
     var principal = document.getElementById("principal");
 var years = document.getElementById("years");
 var rate = document.getElementById("rate");
+
+if(principal.value < 1){
+        alert("amount should be greater than 0")
+        principal.focus()
+        return
+    }
     
 
     var interest = principal.value * years.value * rate.value / 100;
